@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Font Picker</title>
+    <!-- Main Style-sheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Jquery 3.7.0 (thats lates version) -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+  <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+</head>
+<body>
+<div class="font-wrapper">
+    <header>
+        <div class="logo">
+            <img src="googleFont.svg" alt="logo">
+        </div>
+        <div class="menu">
+            <button class="dark-toggle">
+                <i class="fi fi-rr-eclipse-alt"></i>
+            </button>
+            <button class="grid">
+                <i class="fi fi-rr-apps-add"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="search-wrapper">
+        <form class="form">
+            <div id="filter-nav">
+                <a class="filter-toggle" href="javascript:void(0)">
+                    <i class="fi fi-rr-filter"></i>
+                </a>
+                <ul class="filter-dropdown">
+                  <li>
+                    <a id="popular-font" onclick="filterFont(event,'popular')" class="filter-btn active" href="javascript:void(0)">
+                        Popular
+                    </a>
+                    </li>
+
+                  <li>
+                    <a id="new-font" onclick="filterFont(event,'alpha')" class="filter-btn" href="javascript:void(0)">
+                        Alpha
+                    </a>
+                </li>
+
+                  <li>
+                    <a id="new-font" onclick="filterFont(event,'style')" class="filter-btn" href="javascript:void(0)">
+                        Style
+                    </a>
+                </li>
+
+                  <li>
+                    <a id="trending-font" onclick="filterFont(event,'trending')" class="filter-btn" href="javascript:void(0)">
+                        Trending
+                    </a>
+                </li>
+
+                </ul>
+           </div>
+          <input value="jquery" type="search" id="search" class="search" placeholder="Type Cdn Name">
+        </form>
+    </div>
+
+    <div id="resultList">
+        <!-- Display Fonts -->
+    </div>
+    
+    <div class="spinner js-spinner hidden">
+		<div class="double-bounce1"></div>
+		<div class="double-bounce2"></div>
+	</div> 
+
+
+<div class="page">
+  <button onclick="paginationFont('prev')" id="prev"><i class="las la-hand-point-left"></i> Prev</button>
+  <button onclick="paginationFont('next')" id="next">Next <i class="las la-hand-point-right"></i></button>
+</div>
+
+<footer class="site-footer">
+    <div class="max-width">
+      <p>© 2022 <a href="#"> MKPLS </a>All Right Reserved.
+      </p>
+    </div>
+</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
