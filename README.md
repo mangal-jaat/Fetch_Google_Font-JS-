@@ -12,10 +12,8 @@ A simple method to use +1500 google fonts in your project, built with <code>HTML
 - You have to keep browsing to find a suitable font for your web project
 > different fonts to see how it looks! testing your text for each single font,and style live preview by sample text
 
-## Table of Contents
-1. [Api](#api)
 
-## api
+## Google font Guide step by step
 > font api define as variable
 ```js
 var api_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
