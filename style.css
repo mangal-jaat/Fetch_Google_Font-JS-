@@ -140,6 +140,9 @@ ul.filter-dropdown li a {
     display: block;
     color: #565674;
 }
+ul.filter-dropdown li .filter-btn.active{
+    color: #00ABE6;
+}
 
 
 
